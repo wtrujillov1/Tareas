@@ -148,11 +148,3 @@ Para comprobarlo: ejecuta `npm run build` y `npm run preview`, abre <http://loca
 Se comprobó manualmente la ejecución local contra la API y la versión compilada con su manifest, service worker y modo sin conexión. El proyecto no incluye pruebas automatizadas. `npm run build` confirma que el código compila.
 
 Esta aplicación académica está pensada para ejecutarse junto a la API en local. Un despliegue público requeriría HTTPS (necesario para el service worker fuera de `localhost`) y que la interfaz y la API compartan origen, por ejemplo detrás de un mismo proxy inverso, o bien configurar el acceso entre orígenes y las cookies en el servidor. Los datos y las sesiones pertenecen a la API; esta aplicación no guarda credenciales ni tareas en el navegador.
-
-## Entrega
-
-1. Consultar el código de esta aplicación y de la API: <https://github.com/wtrujillov1/API>.
-2. Ejecutar la API y la aplicación como se indica arriba y probar registro, CRUD, conflicto de versión y actualización entre dos pestañas.
-3. Probar la PWA con `npm run build` y `npm run preview`: instalación y modo sin conexión.
-4. Revisar el informe técnico de Wilmer Andrés Trujillo Vera en [`docs/Trujillo_Wilmer_AplWeb_U3.pdf`](docs/Trujillo_Wilmer_AplWeb_U3.pdf), de máximo dos páginas.
-5. Incorporar la URL pública de demostración cuando exista un despliegue.
